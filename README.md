@@ -1,4 +1,4 @@
-# Projeto_Final_Fis492
+# Projeto_Final_Fis492 (INCOMPLETO E IMPOSSÍVEL DE FICAR COMPLETO ATÉ A APRESENTAÇÃO)
 Arquivos requisitados para a entrega do projeto final da disciplina FIS492 no semestre de 2024/2.
 --------------------------------------------------------------------------------------------------
 #Autores: Murilo Garcia, Maria Eduarda
