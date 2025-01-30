@@ -34,9 +34,9 @@ program programa
     do x = 1, 5
         do y = 1, 5
             do z = 1, 5
-                vetores_posicaoR(contagem,1) = real(x,dp)
-                vetores_posicaoR(contagem,2) = real(y,dp)
-                vetores_posicaoR(contagem,3) = real(z,dp)
+                vetores_posicaoR(contagem,1) = real(x,dp) !Podemos inserir constantes como 1E-10 para aproximar
+                vetores_posicaoR(contagem,2) = real(y,dp) !da carga e possivelmente obter melhores valores
+                vetores_posicaoR(contagem,3) = real(z,dp) !Mas tem que alterar a norma e espaçamento no Python
                 contagem = contagem +1
             end do
         end do
@@ -55,11 +55,10 @@ do while (i<= numero_de_imagens)
         contagem = contagem +1
     end do
     i = i+1
-    t =(tempo_total/numero_de_imagens)*i
+    t =(tempo_total/numero_de_imagens)*i !Tempo t atualizado fora do loop de escrita, logo o arquivo ocntem somente o próprio t
 end do
     close(arquivo)
     !Escrever para cada instante de tempo t qual sera o vetor campo eletrico em cada um dos 125 vetores
     !Para inicio talvez 10 segundos seria lega, em 10 segundos 200 imagens são poucas o que dá 20FPS
     !Passemos para 60FPS o que da 60 imagens por segundo
-    
 end program
